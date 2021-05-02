@@ -69,7 +69,12 @@ ul {
 
 
 .indexWrapper {
-  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-top: 1.5em;
 }
 
 
@@ -137,4 +142,20 @@ ul {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: #e0e1e2 none;
+  color: rgba(0,0,0,.6);
+  padding-bottom: 3px;
+}
+
+button:hover {
+  background: #aaaaaa none;
 }
